@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">my maps</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="name">Name</string>
+    <string name="search">Search</string>
+    <string name="schools">Schools</string>
+    <string name="restautants">Restautants</string>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/TF_location"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/name"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/B_search"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/TF_location"
+        android:onClick="onClick"
+        android:text="@string/search" />
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/B_hospitals"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        tools:context="com.example.priyanka.mapsdemo.MapsActivity" />
+
+    <Button
+        android:id="@+id/B_hospitals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TF_location"
+        android:onClick="onClick"
+        android:text="@string/hospitals" />
+
+    <Button
+        android:id="@+id/B_schools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TF_location"
+        android:layout_toEndOf="@+id/B_hospitals"
+        android:onClick="onClick"
+        android:text="@string/schools" />
+
+    <Button
+        android:id="@+id/B_restaurants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TF_location"
+        android:layout_toEndOf="@+id/B_schools"
+        android:onClick="onClick"
+        android:text="@string/restautants" />
+
+
+
+
+</RelativeLayout>
